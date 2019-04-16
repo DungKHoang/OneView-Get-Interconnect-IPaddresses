@@ -6,10 +6,6 @@ The script collects ipV4 and ipV6 addresses of all interconnect modules
 ## Prerequisites
 The script requires:
    * the latest OneView PowerShell library : https://github.com/HewlettPackard/POSH-HPOneView/releases
-
-## Prerequisites
-The script requires:
-   * the latest OneView PowerShell library : https://github.com/HewlettPackard/POSH-HPOneView/releases
    * Optionally, you can install the module ImportExcel from the PowerShell gallery to take advantage of Excel functions 
      ** Use the command Install-module ImportExcel -scope CurrentUser 
    * A txt file containing list of OneView appliances name or IP
@@ -28,7 +24,7 @@ if the ImportExcel module is installed, the script will generate Excel file.
 ```
    # The script will generate an appliance dump 
    $cred    = get-credential   # Provide admin credential to connect to OneView
-    .\create-interconnect-address.ps1 -OVcredentail $cred -OVListCSV ovlist.txt
+    .\get-interconnect-address.ps1 -OVcredential $cred -OVListCSV ovlist.txt
 
 
 
